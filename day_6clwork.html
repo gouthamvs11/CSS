@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .product-card h2 {
+            margin-top: 0;
+        }
+        .product-card .price {
+            color: green;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .product-card .description {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .product-card button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px; 
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .product-card button:hover {
+            background-color: #218838;
+        }
+        .productimage {
+            border: 2px solid #070000;
+            border-radius: 50px 0px;
+            padding: 10px 5px;
+            margin: auto;
+        }
+        img {
+            width: 250px;
+            height: 150px;
+            border-radius: 8px;
+        }
+        @media only screen and (max-width: 600px) {
+            .product-card {
+                background-color: darkred;
+            }
+            .productimage {
+                background-color: darkslategray;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <h2>Nothing Ear 3</h2>
+        <div class="productimage"><img src="https://cdn.mos.cms.futurecdn.net/nTwNvbdpmU95TpBcBFAcVG.jpg" alt="Nothing Ear 3"></div>
+        <p class="description">The Nothing Ear 3 are the latest flagship true wireless earbuds featuring a premium, transparent design with aluminum accents and a new "Super Mic" in the charging case for enhanced call clarity.</p>
+        <p class="price">$179.99</p>
+        <button>Buy Now</button>
+    </div>
+
+    
+</body>
+</html>
