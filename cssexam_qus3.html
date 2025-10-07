@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;   
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-side {
+      flex: 1;
+      background: linear-gradient(to bottom, #b7b7ea ,#f4c89e);
+    }
+
+    .right-side {
+      flex: 1;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .login-box {
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: orangered;
+      font-size: 22px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid grey;
+      border-radius: 3px;
+    }
+
+    .checkbox-group {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .checkbox-group label {
+      margin-left: 5px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: orangered;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 3px;
+    }
+
+    .login-box button:active {
+      color: yellow;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-side {
+        display: none;
+      }
+
+      .right-side {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+      }
+
+      .login-box {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left-side"></div>
+    <div class="right-side">
+      <div class="login-box">
+        <h2>Login Form</h2>
+        <form>
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="text" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password">
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
